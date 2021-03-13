@@ -1,0 +1,27 @@
+body {
+    background-color: #a52a2a;
+    color: #a52a2a;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Quiksand';
+    padding-top: 5%;
+    word-wrap: break-word;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;  
+    background-color: #a52a2a;  
+}
+
+
+
+.Block {
+    background-color: #ffff00;
+    border: 1px solid #555;
+    padding: 5%;
+    margin: 2%;
+}
+
+
+/*# sourceMappingURL=index1.HASH_REF_d962e7dcc5d5322e5510576185ecb552.css.map */

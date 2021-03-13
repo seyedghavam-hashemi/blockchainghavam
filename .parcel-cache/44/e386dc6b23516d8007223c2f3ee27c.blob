@@ -1,0 +1,42 @@
+"use strict";
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports["default"] = void 0;
+  var _react = _interopRequireDefault(require("react"));
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      "default": obj
+    };
+  }
+  var Transaction = function Transaction(_ref) {
+    var transaction = _ref.transaction;
+    var input = transaction.input, outputMap = transaction.outputMap;
+    var recipients = Object.keys(outputMap);
+    return (
+      /*#__PURE__*/_react["default"].createElement("div", {
+        className: "Transaction"
+      }, /*#__PURE__*/_react["default"].createElement("div", null, "From: ", ("").concat(input.address.substring(0, 20), "..."), " | Balance: ", input.amount), recipients.map(function (recipient) {
+        return (
+          /*#__PURE__*/_react["default"].createElement("div", {
+            key: recipient
+          }, "To: ", ("").concat(recipient.substring(0, 20), "..."), " | Sent: ", outputMap[recipient])
+        );
+      }))
+    );
+  };
+  _c = Transaction;
+  var _default = Transaction;
+  exports["default"] = _default;
+  var _c;
+  $RefreshReg$(_c, "Transaction");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="38fbb531c638189a6f10d6e45471bc92">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="4719093b3b5d271b3f6fc9ae1239a442" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link href="8daadd3d40115c78064854ba5fbc9d08" rel="stylesheet">
+    </head>
+    <body>
+        <div id="body1">
+        <div classname="B">
+        <img src="b53b1bf380e7e20cec2f0f76d15a4b03" alt="logo">
+        <br>
+        <div id="root"></div>
+        <script src="b6ff965c7a0eef159da90a5237e3ff2c"></script>
+        </div>
+    </div>
+</body></html>

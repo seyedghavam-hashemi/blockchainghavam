@@ -1,0 +1,23 @@
+
+
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+.WalletInfo {
+    width: 500px;
+}
+
+.Block {
+    background-color: #ffff00;
+    border: 1px solid #555;
+    padding: 5%;
+    margin: 2%;
+}
+
+
+/*# sourceMappingURL=index1.HASH_REF_e6da8e13f7ec77e3864877442a804115.css.map */

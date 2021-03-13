@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="/index1.HASH_REF_e6da8e13f7ec77e3864877442a804115.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="/logo.HASH_REF_3aa4e420a8f526a8459ef49374d1e903.png" alt="logo">
+        <br>
+        <div id="root"></div>
+        <script src="/index1.HASH_REF_b492aaa3b6d6113ed47e09e8ed5ffea4.js"></script>
+    </body>
+</html>
