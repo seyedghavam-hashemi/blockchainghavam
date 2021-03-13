@@ -29591,18 +29591,33 @@ try {
     };
     return _getPrototypeOf(o);
   }
+  function _defineProperty(obj, key, value) {
+    if ((key in obj)) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+    return obj;
+  }
   var App = /*#__PURE__*/(function (_Component) {
     _inherits(App, _Component);
     var _super = _createSuper(App);
     function App() {
-      var _temp, _this;
+      var _this;
       _classCallCheck(this, App);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {
+      _this = _super.call.apply(_super, [this].concat(args));
+      _defineProperty(_assertThisInitialized(_this), "state", {
         walletInfo: {}
-      }, _temp));
+      });
+      return _this;
     }
     _createClass(App, [{
       key: "componentDidMount",
@@ -29623,7 +29638,7 @@ try {
         return (
           /*#__PURE__*/_react["default"].createElement("div", {
             className: "App"
-          }, /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("div", null, "Welcome to the blockchain..."), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Link, {
+          }, /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("div", null, "Welcome to the HOSSEIN'S BlockChain"), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Link, {
             to: "/blocks"
           }, "Blocks")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Link, {
             to: "/conduct-transaction"
@@ -29982,20 +29997,35 @@ try {
     };
     return _getPrototypeOf(o);
   }
+  function _defineProperty(obj, key, value) {
+    if ((key in obj)) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+    return obj;
+  }
   var Blocks = /*#__PURE__*/(function (_Component) {
     _inherits(Blocks, _Component);
     var _super = _createSuper(Blocks);
     function Blocks() {
-      var _temp, _this;
+      var _this;
       _classCallCheck(this, Blocks);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {
+      _this = _super.call.apply(_super, [this].concat(args));
+      _defineProperty(_assertThisInitialized(_this), "state", {
         blocks: [],
         paginatedId: 1,
         blocksLength: 0
-      }, _this.fetchPaginatedBlocks = function (paginatedId) {
+      });
+      _defineProperty(_assertThisInitialized(_this), "fetchPaginatedBlocks", function (paginatedId) {
         return function () {
           fetch(("").concat(document.location.origin, "/api/blocks/").concat(paginatedId)).then(function (response) {
             return response.json();
@@ -30005,7 +30035,8 @@ try {
             });
           });
         };
-      }, _temp));
+      });
+      return _this;
     }
     _createClass(Blocks, [{
       key: "componentDidMount",
@@ -48153,22 +48184,38 @@ try {
     };
     return _getPrototypeOf(o);
   }
+  function _defineProperty(obj, key, value) {
+    if ((key in obj)) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+    return obj;
+  }
   var Block = /*#__PURE__*/(function (_Component) {
     _inherits(Block, _Component);
     var _super = _createSuper(Block);
     function Block() {
-      var _temp, _this;
+      var _this;
       _classCallCheck(this, Block);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {
+      _this = _super.call.apply(_super, [this].concat(args));
+      _defineProperty(_assertThisInitialized(_this), "state", {
         displayTransaction: false
-      }, _this.toggleTransaction = function () {
+      });
+      _defineProperty(_assertThisInitialized(_this), "toggleTransaction", function () {
         _this.setState({
           displayTransaction: !_this.state.displayTransaction
         });
-      }, _temp));
+      });
+      return _this;
     }
     _createClass(Block, [{
       key: "displayTransaction",
@@ -48421,28 +48468,45 @@ try {
     };
     return _getPrototypeOf(o);
   }
+  function _defineProperty(obj, key, value) {
+    if ((key in obj)) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+    return obj;
+  }
   var ConductTransaction = /*#__PURE__*/(function (_Component) {
     _inherits(ConductTransaction, _Component);
     var _super = _createSuper(ConductTransaction);
     function ConductTransaction() {
-      var _temp, _this;
+      var _this;
       _classCallCheck(this, ConductTransaction);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {
+      _this = _super.call.apply(_super, [this].concat(args));
+      _defineProperty(_assertThisInitialized(_this), "state", {
         recipient: '',
         amount: 0,
         knownAddresses: []
-      }, _this.updateRecipient = function (event) {
+      });
+      _defineProperty(_assertThisInitialized(_this), "updateRecipient", function (event) {
         _this.setState({
           recipient: event.target.value
         });
-      }, _this.updateAmount = function (event) {
+      });
+      _defineProperty(_assertThisInitialized(_this), "updateAmount", function (event) {
         _this.setState({
           amount: Number(event.target.value)
         });
-      }, _this.conductTransaction = function () {
+      });
+      _defineProperty(_assertThisInitialized(_this), "conductTransaction", function () {
         var _this$state = _this.state, recipient = _this$state.recipient, amount = _this$state.amount;
         fetch(("").concat(document.location.origin, "/api/transact"), {
           method: 'POST',
@@ -48459,7 +48523,8 @@ try {
           alert(json.message || json.type);
           _history["default"].push('/transaction-pool');
         });
-      }, _temp));
+      });
+      return _this;
     }
     _createClass(ConductTransaction, [{
       key: "componentDidMount",
@@ -48669,19 +48734,34 @@ try {
     };
     return _getPrototypeOf(o);
   }
+  function _defineProperty(obj, key, value) {
+    if ((key in obj)) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+    return obj;
+  }
   var POLL_INERVAL_MS = 10000;
   var TransactionPool = /*#__PURE__*/(function (_Component) {
     _inherits(TransactionPool, _Component);
     var _super = _createSuper(TransactionPool);
     function TransactionPool() {
-      var _temp, _this;
+      var _this;
       _classCallCheck(this, TransactionPool);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {
+      _this = _super.call.apply(_super, [this].concat(args));
+      _defineProperty(_assertThisInitialized(_this), "state", {
         transactionPoolMap: {}
-      }, _this.fetchTransactionPoolMap = function () {
+      });
+      _defineProperty(_assertThisInitialized(_this), "fetchTransactionPoolMap", function () {
         fetch(("").concat(document.location.origin, "/api/transaction-pool-map")).then(function (response) {
           return response.json();
         }).then(function (json) {
@@ -48689,7 +48769,8 @@ try {
             transactionPoolMap: json
           });
         });
-      }, _this.fetchMineTransactions = function () {
+      });
+      _defineProperty(_assertThisInitialized(_this), "fetchMineTransactions", function () {
         fetch(("").concat(document.location.origin, "/api/mine-transactions")).then(function (response) {
           if (response.status === 200) {
             alert('success');
@@ -48698,7 +48779,8 @@ try {
             alert('The mine-transactions block request did not complete.');
           }
         });
-      }, _temp));
+      });
+      return _this;
     }
     _createClass(TransactionPool, [{
       key: "componentDidMount",
