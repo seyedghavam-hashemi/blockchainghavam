@@ -1,0 +1,41 @@
+"use strict";
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = _interopRequireDefault(require("react"));
+  var _reactDom = require("react-dom");
+  var _reactRouterDom = require("react-router-dom");
+  var _history = _interopRequireDefault(require("./history"));
+  var _App = _interopRequireDefault(require("./components/App"));
+  var _Blocks = _interopRequireDefault(require("./components/Blocks"));
+  var _ConductTransaction = _interopRequireDefault(require("./components/ConductTransaction"));
+  var _TransactionPool = _interopRequireDefault(require("./components/TransactionPool"));
+  require("./index.css");
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      "default": obj
+    };
+  }
+  (0, _reactDom.render)(/*#__PURE__*/_react["default"].createElement(_reactRouterDom.Router, {
+    history: _history["default"]
+  }, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/",
+    component: _App["default"]
+  }), /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
+    path: "/blocks",
+    component: _Blocks["default"]
+  }), /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
+    path: "/conduct-transaction",
+    component: _ConductTransaction["default"]
+  }), /*#__PURE__*/_react["default"].createElement(_reactRouterDom.Route, {
+    path: "/transaction-pool",
+    component: _TransactionPool["default"]
+  }))), document.getElementById('root'));
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

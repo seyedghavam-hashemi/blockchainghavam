@@ -29591,33 +29591,22 @@ try {
     };
     return _getPrototypeOf(o);
   }
-  function _defineProperty(obj, key, value) {
-    if ((key in obj)) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-    return obj;
-  }
   var App = /*#__PURE__*/(function (_Component) {
     _inherits(App, _Component);
     var _super = _createSuper(App);
     function App() {
-      var _this;
+      var _temp, _this;
       _classCallCheck(this, App);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      _this = _super.call.apply(_super, [this].concat(args));
-      _defineProperty(_assertThisInitialized(_this), "state", {
-        walletInfo: {}
-      });
-      return _this;
+      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), Object.defineProperty(_assertThisInitialized(_this), "state", {
+        enumerable: true,
+        writable: true,
+        value: {
+          walletInfo: {}
+        }
+      }), _temp));
     }
     _createClass(App, [{
       key: "componentDidMount",
@@ -29997,46 +29986,38 @@ try {
     };
     return _getPrototypeOf(o);
   }
-  function _defineProperty(obj, key, value) {
-    if ((key in obj)) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-    return obj;
-  }
   var Blocks = /*#__PURE__*/(function (_Component) {
     _inherits(Blocks, _Component);
     var _super = _createSuper(Blocks);
     function Blocks() {
-      var _this;
+      var _temp, _this;
       _classCallCheck(this, Blocks);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      _this = _super.call.apply(_super, [this].concat(args));
-      _defineProperty(_assertThisInitialized(_this), "state", {
-        blocks: [],
-        paginatedId: 1,
-        blocksLength: 0
-      });
-      _defineProperty(_assertThisInitialized(_this), "fetchPaginatedBlocks", function (paginatedId) {
-        return function () {
-          fetch(("").concat(document.location.origin, "/api/blocks/").concat(paginatedId)).then(function (response) {
-            return response.json();
-          }).then(function (json) {
-            return _this.setState({
-              blocks: json
+      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), Object.defineProperty(_assertThisInitialized(_this), "state", {
+        enumerable: true,
+        writable: true,
+        value: {
+          blocks: [],
+          paginatedId: 1,
+          blocksLength: 0
+        }
+      }), Object.defineProperty(_assertThisInitialized(_this), "fetchPaginatedBlocks", {
+        enumerable: true,
+        writable: true,
+        value: function value(paginatedId) {
+          return function () {
+            fetch(("").concat(document.location.origin, "/api/blocks/").concat(paginatedId)).then(function (response) {
+              return response.json();
+            }).then(function (json) {
+              return _this.setState({
+                blocks: json
+              });
             });
-          });
-        };
-      });
-      return _this;
+          };
+        }
+      }), _temp));
     }
     _createClass(Blocks, [{
       key: "componentDidMount",
@@ -48184,38 +48165,30 @@ try {
     };
     return _getPrototypeOf(o);
   }
-  function _defineProperty(obj, key, value) {
-    if ((key in obj)) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-    return obj;
-  }
   var Block = /*#__PURE__*/(function (_Component) {
     _inherits(Block, _Component);
     var _super = _createSuper(Block);
     function Block() {
-      var _this;
+      var _temp, _this;
       _classCallCheck(this, Block);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      _this = _super.call.apply(_super, [this].concat(args));
-      _defineProperty(_assertThisInitialized(_this), "state", {
-        displayTransaction: false
-      });
-      _defineProperty(_assertThisInitialized(_this), "toggleTransaction", function () {
-        _this.setState({
-          displayTransaction: !_this.state.displayTransaction
-        });
-      });
-      return _this;
+      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), Object.defineProperty(_assertThisInitialized(_this), "state", {
+        enumerable: true,
+        writable: true,
+        value: {
+          displayTransaction: false
+        }
+      }), Object.defineProperty(_assertThisInitialized(_this), "toggleTransaction", {
+        enumerable: true,
+        writable: true,
+        value: function value() {
+          _this.setState({
+            displayTransaction: !_this.state.displayTransaction
+          });
+        }
+      }), _temp));
     }
     _createClass(Block, [{
       key: "displayTransaction",
@@ -48468,63 +48441,61 @@ try {
     };
     return _getPrototypeOf(o);
   }
-  function _defineProperty(obj, key, value) {
-    if ((key in obj)) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-    return obj;
-  }
   var ConductTransaction = /*#__PURE__*/(function (_Component) {
     _inherits(ConductTransaction, _Component);
     var _super = _createSuper(ConductTransaction);
     function ConductTransaction() {
-      var _this;
+      var _temp, _this;
       _classCallCheck(this, ConductTransaction);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      _this = _super.call.apply(_super, [this].concat(args));
-      _defineProperty(_assertThisInitialized(_this), "state", {
-        recipient: '',
-        amount: 0,
-        knownAddresses: []
-      });
-      _defineProperty(_assertThisInitialized(_this), "updateRecipient", function (event) {
-        _this.setState({
-          recipient: event.target.value
-        });
-      });
-      _defineProperty(_assertThisInitialized(_this), "updateAmount", function (event) {
-        _this.setState({
-          amount: Number(event.target.value)
-        });
-      });
-      _defineProperty(_assertThisInitialized(_this), "conductTransaction", function () {
-        var _this$state = _this.state, recipient = _this$state.recipient, amount = _this$state.amount;
-        fetch(("").concat(document.location.origin, "/api/transact"), {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            recipient: recipient,
-            amount: amount
-          })
-        }).then(function (response) {
-          return response.json();
-        }).then(function (json) {
-          alert(json.message || json.type);
-          _history["default"].push('/transaction-pool');
-        });
-      });
-      return _this;
+      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), Object.defineProperty(_assertThisInitialized(_this), "state", {
+        enumerable: true,
+        writable: true,
+        value: {
+          recipient: '',
+          amount: 0,
+          knownAddresses: []
+        }
+      }), Object.defineProperty(_assertThisInitialized(_this), "updateRecipient", {
+        enumerable: true,
+        writable: true,
+        value: function value(event) {
+          _this.setState({
+            recipient: event.target.value
+          });
+        }
+      }), Object.defineProperty(_assertThisInitialized(_this), "updateAmount", {
+        enumerable: true,
+        writable: true,
+        value: function value(event) {
+          _this.setState({
+            amount: Number(event.target.value)
+          });
+        }
+      }), Object.defineProperty(_assertThisInitialized(_this), "conductTransaction", {
+        enumerable: true,
+        writable: true,
+        value: function value() {
+          var _this$state = _this.state, recipient = _this$state.recipient, amount = _this$state.amount;
+          fetch(("").concat(document.location.origin, "/api/transact"), {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              recipient: recipient,
+              amount: amount
+            })
+          }).then(function (response) {
+            return response.json();
+          }).then(function (json) {
+            alert(json.message || json.type);
+            _history["default"].push('/transaction-pool');
+          });
+        }
+      }), _temp));
     }
     _createClass(ConductTransaction, [{
       key: "componentDidMount",
@@ -48734,53 +48705,48 @@ try {
     };
     return _getPrototypeOf(o);
   }
-  function _defineProperty(obj, key, value) {
-    if ((key in obj)) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-    return obj;
-  }
   var POLL_INERVAL_MS = 10000;
   var TransactionPool = /*#__PURE__*/(function (_Component) {
     _inherits(TransactionPool, _Component);
     var _super = _createSuper(TransactionPool);
     function TransactionPool() {
-      var _this;
+      var _temp, _this;
       _classCallCheck(this, TransactionPool);
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
-      _this = _super.call.apply(_super, [this].concat(args));
-      _defineProperty(_assertThisInitialized(_this), "state", {
-        transactionPoolMap: {}
-      });
-      _defineProperty(_assertThisInitialized(_this), "fetchTransactionPoolMap", function () {
-        fetch(("").concat(document.location.origin, "/api/transaction-pool-map")).then(function (response) {
-          return response.json();
-        }).then(function (json) {
-          return _this.setState({
-            transactionPoolMap: json
+      return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), Object.defineProperty(_assertThisInitialized(_this), "state", {
+        enumerable: true,
+        writable: true,
+        value: {
+          transactionPoolMap: {}
+        }
+      }), Object.defineProperty(_assertThisInitialized(_this), "fetchTransactionPoolMap", {
+        enumerable: true,
+        writable: true,
+        value: function value() {
+          fetch(("").concat(document.location.origin, "/api/transaction-pool-map")).then(function (response) {
+            return response.json();
+          }).then(function (json) {
+            return _this.setState({
+              transactionPoolMap: json
+            });
           });
-        });
-      });
-      _defineProperty(_assertThisInitialized(_this), "fetchMineTransactions", function () {
-        fetch(("").concat(document.location.origin, "/api/mine-transactions")).then(function (response) {
-          if (response.status === 200) {
-            alert('success');
-            _history["default"].push('/blocks');
-          } else {
-            alert('The mine-transactions block request did not complete.');
-          }
-        });
-      });
-      return _this;
+        }
+      }), Object.defineProperty(_assertThisInitialized(_this), "fetchMineTransactions", {
+        enumerable: true,
+        writable: true,
+        value: function value() {
+          fetch(("").concat(document.location.origin, "/api/mine-transactions")).then(function (response) {
+            if (response.status === 200) {
+              alert('success');
+              _history["default"].push('/blocks');
+            } else {
+              alert('The mine-transactions block request did not complete.');
+            }
+          });
+        }
+      }), _temp));
     }
     _createClass(TransactionPool, [{
       key: "componentDidMount",
